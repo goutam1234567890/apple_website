@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+Apple Website Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based clone of the Apple Watch customization page. It allows users to explore various watch case and band options, customize their selections, and navigate to a save page where they can view their selected configuration, total price, and a shareable link.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+1. Customization Options
+Case Selection: Users can browse and select from various Apple Watch cases.
+Band Selection: Users can browse and select from various Apple Watch bands.
+Size Options: Two size options (42mm and 46mm) are available for customization.
 
-### `npm start`
+2. Interactive Carousel
+A carousel enables users to preview case and band images dynamically.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Save Functionality
+A Save button navigates the user to a SavePage where their selected case and band are displayed, along with the total price and a shareable link.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Dynamic Styling
+Z-Index and Margin Adjustments: Styling dynamically adjusts based on user interaction (e.g., toggling between Case and Band categories).
 
-### `npm test`
+5. React Router Integration
+Navigation between pages (e.g., from the customization page to the save page) is powered by React Router.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Usage
 
-### `npm run build`
+Open the app and select a case and band for your Apple Watch.
+Adjust the size (42mm or 46mm) using the available buttons.
+Click Save to navigate to the SavePage where you can view the summary of your customization, including:
+Selected case and band images.
+Total price.
+A shareable link for your configuration.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Key Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Header: Displays the Apple logo and contains the Save button.
+CustomizePage: Main customization interface. Includes the carousel, size options, and category selectors.
+SavePage: Displays the selected case and band, total price, and a shareable link.
+withRouter: Utility to provide navigate functionality to class components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Styling
 
-### `npm run eject`
+The application is styled using both CSS and inline styles.
+Dynamic styling is applied based on user actions (e.g., z-index and margin-top adjustments).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Future Enhancements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Backend Integration:
+Replace static data with API calls to fetch product details dynamically.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Improved Styling:
+Enhance responsiveness and visual design.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+User Authentication:
+Allow users to save their configurations to a profile.
 
-## Learn More
+Analytics:
+Track user interactions for insights.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
